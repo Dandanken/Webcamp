@@ -4,6 +4,10 @@
     
 }
 
+ul{
+    list-style: none;
+}
+
 .banner-grid{
     display:flex;
     flex-direction: row;
@@ -33,6 +37,34 @@
     justify-content: center;
 }
 
+.center{
+    text-align: center;
+}
+
+.footer-menu{
+    display:flex;
+    flex-direction: column;
+    background-color: #202020;
+    color: rgb(243, 243, 243);
+}
+
+.dropdown{
+    width:100%;
+}
+
+.dropdown ul{
+    display: none;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+
+.desktop{
+    display: none;
+}
+
 @media screen and (min-width: 800px) {
     .row{
         flex-direction: row;
@@ -46,6 +78,20 @@
     .banner{
         padding-top: 15%;
         padding-bottom: 15%;
+    }
+    .footer-menu{
+        flex-direction:row;
+    }
+    .dropdown{
+        width:25%;
+    }
+
+    .dropdown ul{
+        display: initial;
+    }
+
+    .desktop{
+        display: flex;
     }
 
 }
